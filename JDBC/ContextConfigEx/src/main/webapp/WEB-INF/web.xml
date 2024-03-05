@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>ContextConfigEx</display-name>
+  
+  <welcome-file-list>
+    <welcome-file>form.html</welcome-file>
+  </welcome-file-list>
+  
+  <context-param>
+  		<param-name>username</param-name>
+  		<param-value>admin</param-value>
+  </context-param>
+  
+   <context-param>
+  		<param-name>password</param-name>
+  		<param-value>admin</param-value>
+  </context-param>
+  
+  <servlet>
+		    <description></description>
+		    <display-name>FirstTestServlet</display-name>
+		    <servlet-name>FirstTestServlet</servlet-name>
+		    <servlet-class>com.tcs.FirstTestServlet</servlet-class>
+		    
+		    <init-param>
+		  		<param-name>homeloan</param-name>
+		  		<param-value>6.5</param-value>
+		  </init-param>
+		  
+		   <init-param>
+		  		<param-name>carloan</param-name>
+		  		<param-value>6.5</param-value>
+		  </init-param>
+  
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>FirstTestServlet</servlet-name>
+    <url-pattern>/FirstTestServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	    <description></description>
+	    <display-name>SecondTestServlet</display-name>
+	    <servlet-name>SecondTestServlet</servlet-name>
+	    <servlet-class>com.tcs.SecondTestServlet</servlet-class>
+	    
+	    <init-param>
+			 <param-name>vcs1</param-name>
+			 <param-value>github</param-value>
+		 </init-param>
+			  
+    	 <init-param>
+			 <param-name>vcs2</param-name>
+			 <param-value>gerrit</param-value>
+		 </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SecondTestServlet</servlet-name>
+    <url-pattern>/SecondTestServlet</url-pattern>
+  </servlet-mapping>
+</web-app>

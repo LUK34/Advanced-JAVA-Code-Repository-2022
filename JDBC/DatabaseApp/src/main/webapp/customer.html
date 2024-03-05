@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Customer Registration</title>
+</head>
+<body>
+<h1>Customer Details</h1>
+<form method="post" action="CustomerServlet">
+	<p> First Name:<input type="text" name="firstName"/></p>
+	<p> Last Name:<input type="text" name="lastName"/></p>
+	<p> Mobile No:<input type="text" name="mobile"/></p>
+	<p> E-Mail:<input type="text" name="email"/></p>
+	
+	<!--The below content we will concatenate in servlet class -->
+	
+	<p> Enter H.No:<input type="text" name="t1"/></p>
+	<p> Enter Street:<input type="text" name="t1"/></p>
+	<p> Enter Area:<input type="text" name="t1"/></p>
+	<p><input type="submit" value="Register"/></p>
+	
+	<a href="./DisplayServlet">View Details</a>
+</form>
+</body>
+</html>

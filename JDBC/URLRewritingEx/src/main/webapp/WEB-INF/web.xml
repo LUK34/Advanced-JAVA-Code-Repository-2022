@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" version="4.0">
+  <display-name>URLRewritingEx</display-name>
+  <welcome-file-list>
+    <welcome-file>form.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>FirstServlet</display-name>
+    <servlet-name>FirstServlet</servlet-name>
+    <servlet-class>com.tcs.FirstServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FirstServlet</servlet-name>
+    <url-pattern>/FirstServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SecondServlet</display-name>
+    <servlet-name>SecondServlet</servlet-name>
+    <servlet-class>com.tcs.SecondServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SecondServlet</servlet-name>
+    <url-pattern>/SecondServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DisplayServlet</display-name>
+    <servlet-name>DisplayServlet</servlet-name>
+    <servlet-class>com.tcs.DisplayServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DisplayServlet</servlet-name>
+    <url-pattern>/DisplayServlet</url-pattern>
+  </servlet-mapping>
+</web-app>

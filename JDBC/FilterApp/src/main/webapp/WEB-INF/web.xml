@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="4.0">
+  <display-name>FilterApp</display-name>
+  <welcome-file-list>
+    <welcome-file>form.html</welcome-file>
+  </welcome-file-list>
+  <filter>
+    <display-name>MyFilter1</display-name>
+    <filter-name>MyFilter1</filter-name>
+    <filter-class>com.tcs.MyFilter1</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>MyFilter1</filter-name>
+    <url-pattern>/RegServlet</url-pattern>
+  </filter-mapping>
+  <filter>
+    <display-name>MyFilter2</display-name>
+    <filter-name>MyFilter2</filter-name>
+    <filter-class>com.tcs.MyFilter2</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>MyFilter2</filter-name>
+    <url-pattern>/RegServlet</url-pattern>
+  </filter-mapping>
+  <servlet>
+    <description></description>
+    <display-name>RegServlet</display-name>
+    <servlet-name>RegServlet</servlet-name>
+    <servlet-class>com.tcs.RegServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegServlet</servlet-name>
+    <url-pattern>/RegServlet</url-pattern>
+  </servlet-mapping>
+</web-app>

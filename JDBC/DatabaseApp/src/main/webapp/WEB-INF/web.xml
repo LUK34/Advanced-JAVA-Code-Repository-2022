@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>DatabaseApp</display-name>
+  <welcome-file-list>
+    <welcome-file>customer.html</welcome-file>
+  </welcome-file-list>
+  
+  <resource-ref>
+  <res-ref-name>mypool</res-ref-name>
+  <res-type>javax.sql.DataSource</res-type>
+  <res-auth>Container</res-auth>
+  </resource-ref>
+  
+  <servlet>
+    <description></description>
+    <display-name>CustomerServlet</display-name>
+    <servlet-name>CustomerServlet</servlet-name>
+    <servlet-class>com.tcs.CustomerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CustomerServlet</servlet-name>
+    <url-pattern>/CustomerServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DisplayServlet</display-name>
+    <servlet-name>DisplayServlet</servlet-name>
+    <servlet-class>com.tcs.DisplayServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DisplayServlet</servlet-name>
+    <url-pattern>/DisplayServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ConnUtils</display-name>
+    <servlet-name>ConnUtils</servlet-name>
+    <servlet-class>com.tcs.ConnUtils</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ConnUtils</servlet-name>
+    <url-pattern>/ConnUtils</url-pattern>
+  </servlet-mapping>
+</web-app>
